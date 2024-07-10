@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warnet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-logo">WOW</div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">GAMES</a></li>
+                    <li><a href="">INFORMATION</a></li>
+                    <li><a href="">COMMUNITY</a></li>
+                    <li><a href="">E-SORTS</a></li>
+                    <li><a href="">TOP-UP</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-signup">
+            <div class="header-login">
+                <button class="button-login">
+                    <span>Login</span>
+                    <img src="Assets/log in.png" alt="login image">
+                </button>
+                
+            </div>
+            <div class="header-download">
+                Download
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="home-title">
+            <div class="container">
+                <h1>Dlizzard</h1>
+                <p>
+                    At Wlizzard Entertainment, we pour our hearts and souls into everything we create. We embrace our core values every day so that we can continue creating epic entertainment experiences for all our players. It doesn’t matter who you are or where you’re located—if you’re a member of our evolving and vibrant community, working with us at one of our offices around the globe, or taking a piece of Blizzard with you into space—you’re welcome here.
+                </p>
+                <div>
+                    <button id="try">
+                        Get Started
+                    </button>
+
+                </div>
+            </div>
+       
+        </div>
+        <div class="bgvideo">
+            <video id="vid" src="Assets/Y2meta.app-The Demons Arrive - Cinematic Cut-(1080p).mp4" autoplay muted loop></video>
+            <img id="img1" src="Assets/night-elf-fantasy-world-of-warcraft-uhdpaper.com-4K-3.2716.jpg" alt="background image" loading="lazy">
+        </div>
+        
+        <!-- <section class="news">
+            <h2>News</h2>
+            <div class="container-news">
+                <div class="carousel">
+                
+
+                </div>
+                <div class="news-list">
+    
+                </div>
+            </div>
+            <div class="carousel">
+                
+
+            </div>
+            <div class="news-list">
+
+            </div>
+
+        </section> -->
+
+        <section class="games">
+            <h2>Featured Games</h2>
+            <div class="container-games">
+                <div class="card-games">
+                    <img src="Assets/wow2.webp" alt="image wow">
+                </div>
+                <div class="card-games">
+                    <img src="Assets/warcraft1.webp" alt="image warcraft">
+                </div>
+                <div class="card-games">
+                    <img src="Assets/Diablo.webp" alt="image diablo">
+                </div>
+                <div class="card-games">
+                    <img src="Assets/overwatch2.webp" alt="image overwatch">
+                </div>
+            </div>
+            
+            
+
+
+        </section>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        var video1 = document.querySelector(".bgvideo video")
+        var img1 = document.getElementById("img1");
+        var but = document.getElementById("try");
+        
+        but.addEventListener("mouseenter", () => {
+            video1.play();
+            video1.style.display = "block";
+            img1.style.display = "none";
+        })
+        but.addEventListener("mouseleave", () => {
+            video1.style.display = "none";
+            img1.style.display = "block";
+            video1.pause();         
+        })
+
+    </script>
+
+</body>
+</html>

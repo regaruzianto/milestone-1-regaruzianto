@@ -12,7 +12,15 @@
 </head>
 <body>
     <header>
-        <div class="header-logo">WOW</div>
+        <div class="header-logo">
+            <img src="Assets/wlizard.png" alt="">
+        </div>
+        <div class="hamburger">
+            <button class="hamburger-button" onclick="openNav()">
+                <img src="Assets/icons8-warrior-shield-and-sword-64 (1).png" alt="" >
+            </button>
+            
+        </div>
         <div class="header-nav">
             <nav>
                 <ul>
@@ -43,9 +51,9 @@
     <main>
         <div class="home-title">
             <div class="container">
-                <h1>Dlizzard</h1>
+                <h1>Wlizzard</h1>
                 <p>
-                    At Wlizzard Entertainment, we pour our hearts and souls into everything we create. We embrace our core values every day so that we can continue creating epic entertainment experiences for all our players. It doesn’t matter who you are or where you’re located—if you’re a member of our evolving and vibrant community, working with us at one of our offices around the globe, or taking a piece of Blizzard with you into space—you’re welcome here.
+                    Wlizzard Entertainment dedicated to creating the most epic entertainment experiences ever. Wlizzard Entertainment’s eight core values represent the principles and beliefs that have guided our company throughout the years. These values are reflected in employees' decisions and actions every day.
                 </p>
                 <div>
                     <button id="try">
@@ -57,7 +65,7 @@
        
         </div>
         <div class="bgvideo">
-            <video id="vid" src="Assets/Y2meta.app-The Demons Arrive - Cinematic Cut-(1080p).mp4" autoplay muted loop></video>
+            <video id="vid" src="Assets/wow.mp4" autoplay muted loop></video>
             <img id="img1" src="Assets/night-elf-fantasy-world-of-warcraft-uhdpaper.com-4K-3.2716.jpg" alt="background image" loading="lazy">
         </div>
         
@@ -85,48 +93,168 @@
         <section class="games">
             <h2>Featured Games</h2>
             <div class="container-games">
-                <div class="card-games">
-                    <img src="Assets/wow2.webp" alt="image wow">
+                <div class="card-games" id="card-games1">
+                    <!-- <div class="image-wrap">
+                        <img src="Assets/wow2.webp" id="card-games-img1" alt="image wow">
+                    </div> -->
+                    <video src="Assets/warcraft1.mp4" id="card-games-vid1" poster="Assets/wow2.webp"  muted loop></video>
+                    <h3>Wold of Warcraft Classic</h3>
+                    <p>Action RPG</p>
+                    <div class="container-console">
+                        <img class="image-console" src="Assets/icons8-steam-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-playstation-52.png" alt="">
+                        <img class="image-console" src="Assets/icons8-xbox-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-nintendo-switch-logo-50.png" alt="">
+                    </div>
+                </div>
+                <div class="card-games" id="card-games2">
+                    <div class="image-wrap">
+                        <img src="Assets/warcraft1.webp" id="card-games-img2" alt="image warcraft">
+                    </div>
+                    <h3>Wold of Warcraft: Catalysm</h3>
+                    <p>Action RPG</p>
+                    <div class="container-console">
+                        <img class="image-console" src="Assets/icons8-steam-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-playstation-52.png" alt="">
+                        <img class="image-console" src="Assets/icons8-xbox-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-nintendo-switch-logo-50.png" alt="">
+                    </div>
                 </div>
                 <div class="card-games">
-                    <img src="Assets/warcraft1.webp" alt="image warcraft">
+                    <div class="image-wrap">
+                        <img src="Assets/Diablo.webp" alt="image diablo">
+                    </div>
+                    <h3>Diablo VI</h3>
+                    <p>Action RPG</p>
+                    <div class="container-console">
+                        <img class="image-console" src="Assets/icons8-steam-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-playstation-52.png" alt="">
+                        <img class="image-console" src="Assets/icons8-xbox-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-nintendo-switch-logo-50.png" alt="">
+                    </div>
                 </div>
                 <div class="card-games">
-                    <img src="Assets/Diablo.webp" alt="image diablo">
-                </div>
-                <div class="card-games">
-                    <img src="Assets/overwatch2.webp" alt="image overwatch">
+                    <div class="image-wrap">
+                        <img src="Assets/overwatch2.webp" alt="image overwatch">
+                    </div>
+                    <h3>Overwatch 4</h3>
+                    <p>Action RPG</p>
+                    <div class="container-console">
+                        <img class="image-console" src="Assets/icons8-steam-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-playstation-52.png" alt="">
+                        <img class="image-console" src="Assets/icons8-xbox-50.png" alt="">
+                        <img class="image-console" src="Assets/icons8-nintendo-switch-logo-50.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="games-button">
+                <button > See all Games</button>
+            </div>
             
-            
-
-
         </section>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="">HOME</a>
+              <a href="">NEWS</a>
+              <a href="">GAMES</a>
+              <a href="">INFORMATION</a>
+              <a href="">COMMUNITY</a>
+              <a href="">E-SORTS</a>
+              <a href="">TOP-UP</a>
+            </div>
+        </div>
+        
 
 
 
     </main>
     <footer>
+        <div class="footer-container">
+            <div class="image-logo">
+                <img src="Assets/wlizard.png" alt="">
+            </div>
+            <div class="wraper">
+                <a href="">Privacy Policy</a>
+                <a href="">Term of Service</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Help Center</a>
+            </div>
+            <div>
+                <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
+                <p>Wlizzard, wlizard Games, wlizard Games Store, the wlizard Games Store logo, and wlizard Online Services are trademarks and/or registered trademarks of wlizard Entertainment. All other trademarks are the property of their respective owners.</p>
+            </div>
+            <div>
+                Copyright © WLIZZARD ENTERTAINMENT. All Rights Reserved.
+            </div>
+        </div> 
+        
 
     </footer>
 
     <script>
-        var video1 = document.querySelector(".bgvideo video")
-        var img1 = document.getElementById("img1");
-        var but = document.getElementById("try");
+        let video1 = document.querySelector(".bgvideo video")
+        let img1 = document.getElementById("img1");
+        let but = document.getElementById("try");
         
         but.addEventListener("mouseenter", () => {
-            video1.play();
+            // video1.play();
             video1.style.display = "block";
             img1.style.display = "none";
         })
         but.addEventListener("mouseleave", () => {
             video1.style.display = "none";
             img1.style.display = "block";
-            video1.pause();         
+            // video1.pause();         
         })
 
+        // let videocard1 = document.querySelector("#card-games-vid1");
+        // let imgcard1 = document.getElementById("card-games-img1");
+        // let cardgame1 = document.getElementById("card-games1");
+
+        // cardgame1.addEventListener("mouseenter", () => {
+        //     videocard1.style.display = "block";
+        //     imgcard1.style.display = "none";
+        //     videocard1.play();
+            
+        // })
+        // cardgame1.addEventListener("mouseleave", () => {
+        //     videocard1.pause();
+        //     videocard1.style.display = "none";
+        //     imgcard1.style.display = "block";        
+        // })
+
+        function cardHover(x,y,z) {
+            
+            let videoCard = document.querySelector(x);
+            let imageCard = document.getElementById(y);
+            let cardGames = document.getElementById(z);
+
+            cardgGames.addEventListener("mouseenter", () => {
+            videoCard.style.display = "block";
+            imageCard.style.display = "none";
+            videoCard.play();
+            })  
+
+            cardGames.addEventListener("mouseleave", () => {
+            videoCard.pause();
+            videoCard.style.display = "none";
+            imageCard.style.display = "block";        
+           
+            })
+
+        }
+        cardHover (card-games-vid1,card-games-img1,card-games1);
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
     </script>
 
 </body>

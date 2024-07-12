@@ -76,7 +76,9 @@ header  {
 
 .header-logo img {
     width: 75px;
+    animation: grayfilter 2s infinite;   
 }
+
 .hamburger {
     display: none;
 }
@@ -502,6 +504,14 @@ footer {
 .image-logo img {
     width: 200px;
 }
+
+
+@keyframes grayfilter{
+    0%   {filter: grayscale(100%);}
+    100% {filter: grayscale(0%);}
+    
+}
+
 
 @media screen and (max-width: 767px) {
     .hamburger {

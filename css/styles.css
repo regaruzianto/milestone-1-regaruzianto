@@ -506,6 +506,46 @@ footer {
 }
 
 
+form span {
+    font-weight: bolder;
+    font-family: Helvetica;
+    color: #f1f1f1;
+}
+
+input[type=email] {
+    width: 200px;
+    height: 32px;
+    padding: 4px 0;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 200px;
+    height: 32px;
+    padding: 4px 0;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100px;
+    height: 24px;
+    background-color: #060C12;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    margin: 12px 0;
+}
+
+form button:hover {
+    background-color: #263450;
+}
+
 @keyframes grayfilter{
     0%   {filter: grayscale(100%);}
     100% {filter: grayscale(0%);}

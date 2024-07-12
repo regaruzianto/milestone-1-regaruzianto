@@ -43,7 +43,7 @@
         </div>
         <div class="header-signup">
             <div class="header-login">
-                <button class="button-login">
+                <button class="button-login" onclick="openNav1()">
                     <span>Login</span>
                     <img src="Assets/log in.png" alt="login image">
                 </button>
@@ -63,7 +63,7 @@
                     Wlizzard Entertainment dedicated to creating the most epic entertainment experiences ever.
                 </p>
                 <div>
-                    <button id="try" onclick="">
+                    <button id="try" onclick="openNav1()">
                         Get Started
                     </button>
 
@@ -198,6 +198,15 @@
             </div>
         </div>
         
+        <div id="myNav1" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <form action="" class="overlay-content">
+                <span>Log in</span><br>
+                <input type="email"  placeholder=" your email" name="username" id="username"><br>
+                <input type="password" placeholder=" password" name="password" id="password"><br>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
 
 
 
@@ -235,6 +244,17 @@
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }
+
+        function openNav1() {
+            document.getElementById("myNav1").style.width = "100%";
+        }
+        function closeNav1() {
+            document.getElementById("myNav1").style.width = "0%";
+        }
+
+
+
+
 
         //banner hover video background
         let video1 = document.querySelector(".bgvideo video")

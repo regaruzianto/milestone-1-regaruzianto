@@ -146,6 +146,7 @@ li > a:hover {
 
 .button-login:hover {
     color: #FFFFFF;
+    text-shadow: 0 0 10px #1ADE60, 0 0 20px #1ADE60, 0 0 40px #1ADE60;
 }
 
 .header-download {
@@ -157,6 +158,11 @@ li > a:hover {
     align-content: center;
     text-align: center;
     cursor: pointer;
+}
+
+.header-download a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .header-download:hover {
@@ -197,8 +203,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     bottom: 0;
     left: 0;
     z-index: 9;
@@ -207,8 +211,6 @@ main {
 .home-title .container{
     width: 350px;
     margin-left: 8%;
-    text-align: start;
-    align-self: flex-start;
     color: white;
     text-shadow: 3px 3px 4px #000000;
 }
@@ -357,6 +359,7 @@ main {
     margin-block: 32px;
     color: #FFFFFF;
     text-align: center;
+    font-weight: 400;
 }
 
 .games-button {
@@ -500,6 +503,10 @@ footer {
     }
     .header-download {
         display: none;
+    }
+    .home-title {
+        align-items: center;
+        text-align: center;
     }
   
 }

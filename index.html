@@ -32,8 +32,8 @@
             <nav>
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">GAMES</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#games">GAMES</a></li>
                     <li><a href="#">INFORMATION</a></li>
                     <li><a href="#">COMMUNITY</a></li>
                     <li><a href="#">E-SPORTS</a></li>
@@ -50,7 +50,7 @@
                 
             </div>
             <div class="header-download">
-                Download
+                <a href="#news">Download</a>
             </div>
         </div>
         
@@ -75,11 +75,11 @@
             <video id="vid" src="Assets/wow.mp4" autoplay muted loop></video>
             <picture>
                 <source media="(min-width: 768px)" srcset="Assets/night-elf-fantasy-world-of-warcraft-uhdpaper.com-4K-3.2716.jpg">
-                <img src="Assets/wow-classic-world-of-warcraft-uhdpaper.com-4K-5.149.jpg" alt="background image" loading="lazy">
+                <img src="Assets/wowlichking.jpg" alt="background image" loading="lazy">
             </picture>
         </div>
         
-        <section class="news">
+        <section class="news" id="news">
             <h2>NEWS</h2>
             <div class="container-news">
                 <div class="carousel-container">
@@ -129,7 +129,7 @@
 
         </section>
 
-        <section class="games">
+        <section class="games" id="games">
             <h2>Featured Games</h2>
             <div class="container-games">
                 <div class="card-games" id="card-games1">
@@ -162,7 +162,7 @@
                         <img class="image-console" src="Assets/icons8-steam-50.png" alt="image steam icon">
                         <img class="image-console" src="Assets/icons8-playstation-52.png" alt="image steam icon">
                         <img class="image-console" src="Assets/icons8-xbox-50.png" alt="image xbox icon">
-                        <img class="image-console" src="Assets/icons8-nintendo-switch-logo-50.png" alt="image nintendo switch icon">
+                        
                     </div>
                 </div>
                 <div class="card-games">
@@ -187,13 +187,13 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="">HOME</a>
-              <a href="">NEWS</a>
-              <a href="">GAMES</a>
-              <a href="">INFORMATION</a>
-              <a href="">COMMUNITY</a>
-              <a href="">E-SORTS</a>
-              <a href="">TOP-UP</a>
+              <a href="#" onclick="closeNav()">HOME</a>
+              <a href="#news" onclick="closeNav()">NEWS</a>
+              <a href="#games" onclick="closeNav()">GAMES</a>
+              <a href="#" onclick="closeNav()">INFORMATION</a>
+              <a href="#" onclick="closeNav()">COMMUNITY</a>
+              <a href="#" onclick="closeNav()">E-SORTS</a>
+              <a href="#" onclick="closeNav()">TOP-UP</a>
             </div>
         </div>
         

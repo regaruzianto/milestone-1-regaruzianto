@@ -22,8 +22,10 @@ body {
     z-index: 999;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    /* background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9); */
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -39,13 +41,13 @@ body {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 1.5rem;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
+    margin-block: 5vh;
 }
-  
-  .overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
   
@@ -124,8 +126,6 @@ li > a:hover {
     
 }
 
-
-
 .button-login {
     background: none;
     border: none;
@@ -148,11 +148,10 @@ li > a:hover {
     color: #FFFFFF;
 }
 
-
 .header-download {
     margin-block: 0;
     background-color: #060C12;
-    color: #FFFFFF;
+    color: #A7A4A3;
     border: none;
     width: 130px;
     align-content: center;
@@ -162,6 +161,8 @@ li > a:hover {
 
 .header-download:hover {
     background-color: #151b20;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 main {
     justify-content: center;
@@ -203,8 +204,8 @@ main {
     z-index: 9;
  
 }
-.container{
-    width: 50%;
+.home-title .container{
+    width: 350px;
     margin-left: 8%;
     text-align: start;
     align-self: flex-start;
@@ -212,13 +213,125 @@ main {
     text-shadow: 3px 3px 4px #000000;
 }
 .container h1 {
-    font-size: 56px;
+    font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.news h2 {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .container-news {
     display:flex;
-    width: 64%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #FFFFFF;
+    height: 400px;
+    
+}
+
+.slides-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+       
+}
+.slides-image img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: #ffffff00;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 4px;
+    transition: background-color 0.6s ease
+}
+
+.active, .dot:hover {
+    background-color: #FFFFFF;
+}
+
+.news {
+    background-image: url(/Assets/bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container-news .carousel-container {
+    position: relative;
+    width: 640px;
+    min-width: 300px;
+}
+
+.slides img {
+    width: 100%;
+    max-width: 640px;
+    object-fit: cover;
+}
+
+.container-news .news-list {
+    width: 640px;
+    height: 100%;
+    min-width: 300px;
+    background:rgba(24, 25, 47, 0.35);
+    backdrop-filter: blur(20px);
+    padding: 24px 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    
+}
+
+.news-list h3{
+    font-size: 1.05rem;
+    font-weight: 300;
+    
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.news-list .news-title {
+    font-size: 0.8rem;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 11px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    
+}
+
+.news-title:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.news-date {
+    font-weight: 100;
+    color: #A7A4A3;
 }
 
 #try {
@@ -293,6 +406,8 @@ main {
 
 .card-games p {
     color: #A7A4A3;
+    font-family: "Roboto Condensed" ;
+    font-weight:500;
 }
 
 .card-games img{
@@ -373,7 +488,7 @@ footer {
 }
 
 .image-logo img {
-    width: 100px;
+    width: 200px;
 }
 
 @media screen and (max-width: 767px) {
@@ -383,6 +498,10 @@ footer {
     .header-nav {
         display: none;
     }
+    .header-download {
+        display: none;
+    }
+  
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
@@ -390,6 +509,9 @@ footer {
         display: block;
     }
     .header-nav {
+        display: none;
+    }
+    .header-download {
         display: none;
     }
 }

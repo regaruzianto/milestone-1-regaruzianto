@@ -1,4 +1,3 @@
-https://sinaufullstack.site/
 
 Wlizzard is a game company profile website, containing information about the games currently being developed and news about those games.The site covers news, development updates, and specific details about each game in their portfolio.
 

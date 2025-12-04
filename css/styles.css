@@ -192,6 +192,13 @@ main {
     object-fit: cover;
     
 }
+
+.bgvideo picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .bgvideo video {
     display: none;
     width: 100%;
@@ -243,7 +250,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    padding-bottom: 24px;
+    padding-bottom: 124px;
     
 }
 .slides-image {
@@ -366,6 +373,9 @@ main {
     background-color: #F3CB72;
 }
 
+.games{
+    padding-block: 56px;
+}
 .games h2 {
     margin-block: 32px;
     color: #FFFFFF;
@@ -515,7 +525,7 @@ form span {
 input[type=email] {
     width: 200px;
     height: 32px;
-    padding: 4px 0;
+    padding: 8px 8px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -525,7 +535,7 @@ input[type=email] {
 input[type=password]{
     width: 200px;
     height: 32px;
-    padding: 4px 0;
+    padding: 8px 8px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -534,12 +544,20 @@ input[type=password]{
 
 form button {
     width: 100px;
-    height: 24px;
+    height: 32px;
+    margin-block: 8px;
     background-color: #060C12;
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
-    margin: 12px 0;
+}
+
+.registerButton {
+    background-color: #0566B0;
+}
+
+.registerButton :hover {
+    background-color: #263450;
 }
 
 form button:hover {

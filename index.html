@@ -72,8 +72,9 @@
        
         </div>
         <div class="bgvideo">
-            <video id="vid" src="Assets/wow.mp4" autoplay muted loop></video>
-            <picture>
+            <video style="object-fit: cover;" id="vid" src="Assets/warc.webm" autoplay muted loop></video>
+
+            <picture id="pict">
                 <source media="(min-width: 768px)" srcset="Assets/night-elf-fantasy-world-of-warcraft-uhdpaper.com-4K-3.2716.jpg">
                 <img src="Assets/wowlichking.jpg" alt="background image" loading="lazy">
             </picture>
@@ -259,12 +260,15 @@
         //banner hover video background
         let video1 = document.querySelector(".bgvideo video")
         let but = document.getElementById("try");
+        let pict = document.getElementById("pict")
         
         but.addEventListener("mouseenter", () => {
             video1.style.display = "block";
+            pict.style.display = "none"
         })
         but.addEventListener("mouseleave", () => {
-            video1.style.display = "none";       
+            video1.style.display = "none";
+            pict.style.display = "block"       
         })
 
         //CARD HOVER

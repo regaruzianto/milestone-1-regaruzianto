@@ -1,4 +1,3 @@
-https://sinaufullstack.site/
 
 This repository forked from revou-fsse-5/milestone-1-regaruzianto
 

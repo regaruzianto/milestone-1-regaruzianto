@@ -72,8 +72,9 @@
        
         </div>
         <div class="bgvideo">
-            <video id="vid" src="Assets/wow.mp4" autoplay muted loop></video>
-            <picture>
+            <video id="vid" src="Assets/warc.webm" autoplay muted loop></video>
+
+            <picture id="pict">
                 <source media="(min-width: 768px)" srcset="Assets/night-elf-fantasy-world-of-warcraft-uhdpaper.com-4K-3.2716.jpg">
                 <img src="Assets/wowlichking.jpg" alt="background image" loading="lazy">
             </picture>
@@ -201,7 +202,7 @@
         <div id="myNav1" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
             <form action="" class="overlay-content">
-                <span>Log in</span><br>
+                <span>Login</span><br>
                 <input type="email"  placeholder=" your email" name="username" id="username"><br>
                 <input type="password" placeholder=" password" name="password" id="password"><br>
                 <input type="checkbox" name="keep login" id="keep login"> 
@@ -262,12 +263,15 @@
         //banner hover video background
         let video1 = document.querySelector(".bgvideo video")
         let but = document.getElementById("try");
+        let pict = document.getElementById("pict")
         
         but.addEventListener("mouseenter", () => {
             video1.style.display = "block";
+            pict.style.display = "none"
         })
         but.addEventListener("mouseleave", () => {
-            video1.style.display = "none";       
+            video1.style.display = "none";
+            pict.style.display = "block"       
         })
 
         //CARD HOVER
@@ -321,9 +325,9 @@
         let slideIndex = 1;
         showSlides(slideIndex);
 
-        // function plusSlides(n) {
-        //     showSlides(slideIndex += n);
-        // }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
         function currentSlide(n) {
             showSlides(slideIndex = n);
@@ -349,6 +353,11 @@
             dots[slideIndex-1].className += " active";
         }             
         
+        // AUTO PLAY
+        setInterval(() => {
+            slideIndex++;
+            showSlides(slideIndex);
+        }, 3000)
 
 
 
